@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Install audio tools
+      apt: pkg={{item}}
+      sudo: yes
+      with_items:
+      - mp3gain
+      - atomicparsley
+      - ffmpeg
+      - aacgain

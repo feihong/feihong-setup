@@ -1,0 +1,31 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Install common GUI programs
+      apt: pkg={{item}}
+      sudo: yes
+      with_items:
+      - synaptic
+      - git-cola
+      - gimp
+      - vlc
+      - filezilla
+      - pidgin
+      - calibre
+      - keepassx
+
+    - name: Install common dev tools
+      apt: pkg={{item}}
+      sudo: yes
+      with_items:
+      - curl
+      - imagemagick
+      - build-essential
+      - python-dev
+
+    - name: Install essential Python tools
+      pip: name={{item}}
+      sudo: yes
+      with_items:
+      - virtualenvwrapper
+      - grin
