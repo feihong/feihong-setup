@@ -1,6 +1,16 @@
 ---
 - hosts: localhost
   tasks:
+    - name: Modify .bashrc
+      lineinfile: >
+        dest=~/.bashrc
+        line='. .bash_custom'
+
+    - name: Copy .bash_custom
+      copy: >
+        src=bash_custom.sh
+        dest=~/.bash_custom
+
     - name: Install common GUI programs
       apt: pkg={{item}}
       sudo: yes
