@@ -30,3 +30,4 @@ Manual configuration
 --------------------
 
 [Install Chinese support](http://www.pinyinjoe.com/linux/ubuntu-12-chinese-setup.htm)
+[Fix crazy problems with IBus](http://www.pinyinjoe.com/faq/ubuntu-1404-chinese-ime-problems-faq.htm)
