@@ -4,7 +4,7 @@
     - name: Modify .bashrc
       lineinfile: >
         dest=~/.bashrc
-        line='. .bash_custom'
+        line='. ~/.bash_custom'
 
     - name: Copy .bash_custom
       copy: >
@@ -39,3 +39,6 @@
       with_items:
       - virtualenvwrapper
       - grin
+
+    - name: Install audio tools
+      include: audio.yml

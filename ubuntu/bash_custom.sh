@@ -1,4 +1,4 @@
-export PATH=$PATH:.
+export PATH=$PATH:~/bin:.
 
 source /usr/local/bin/virtualenvwrapper.sh
 
