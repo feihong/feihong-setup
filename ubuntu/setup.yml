@@ -32,6 +32,8 @@
       - imagemagick
       - build-essential
       - python-dev
+      - libffi-dev
+      - libssl-dev
 
     - name: Install essential Python tools
       pip: name={{item}}

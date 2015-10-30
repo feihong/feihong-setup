@@ -25,6 +25,9 @@ Manual install
 
 - [Atom](https://atom.io/)
 - [Chrome](https://www.google.com/chrome/#eula)
+- [Greasemonkey](https://addons.mozilla.org/en-us/firefox/addon/greasemonkey/)
+- [Download Youtube Videos as MP4](https://addons.mozilla.org/en-us/firefox/addon/download-youtube/)
+- [Cache Download](https://addons.mozilla.org/en-us/firefox/addon/cachedownload/)
 
 Manual configuration
 --------------------
