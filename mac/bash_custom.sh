@@ -4,6 +4,7 @@ export PATH=$PATH:~/bin:.
 # Source: https://virtualenvwrapper.readthedocs.org/en/latest/install.html#shell-startup-file
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/projects
+export VIRTUALENVWRAPPER_PYTHON=`which python3`
 source /usr/local/bin/virtualenvwrapper.sh
 
 # NODE
