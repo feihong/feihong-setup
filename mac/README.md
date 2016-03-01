@@ -9,6 +9,7 @@ App Store:
 
 Individually download and install: 
 
+- [iTerm2](https://www.iterm2.com/downloads.html)
 - [GitHub](https://desktop.github.com/)
 - [VirtualBox 5.x](https://www.virtualbox.org/wiki/Downloads)
 - [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
