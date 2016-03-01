@@ -4,7 +4,7 @@
 
 App Store:
 
-- XCode
+- XCode (after install, go to )
 - Slack
 
 Individually download and install: 
@@ -12,6 +12,7 @@ Individually download and install:
 - [GitHub](https://desktop.github.com/)
 - [VirtualBox 5.x](https://www.virtualbox.org/wiki/Downloads)
 - [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
+- [Disk Inventory X](http://www.derlien.com/)
 
 ## Commands
 
