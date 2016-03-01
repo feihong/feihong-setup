@@ -4,7 +4,7 @@
 
 App Store:
 
-- XCode (after install, go to )
+- XCode
 - Slack
 
 Individually download and install: 
