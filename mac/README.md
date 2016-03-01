@@ -10,6 +10,8 @@ App Store:
 Individually download and install: 
 
 - [GitHub](https://desktop.github.com/)
+- [VirtualBox 5.x](https://www.virtualbox.org/wiki/Downloads)
+- [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
 
 ## Commands
 
