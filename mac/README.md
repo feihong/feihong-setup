@@ -2,8 +2,12 @@
 
 ## Manual Installation
 
+App Store:
+
 - XCode
-- GitHub
+- Slack
+
+- [GitHub](https://desktop.github.com/)
 
 ## Commands
 
