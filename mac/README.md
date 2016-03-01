@@ -34,5 +34,5 @@ brew install git python3 node nvm
 mkdir work
 cd work
 git clone git@github.com/feihong/feihong-setup
-cp ~/work/feihong-setup/.bash_custom.sh ~
+cp ~/work/feihong-setup/mac/.bash_custom.sh ~
 ```
