@@ -7,6 +7,8 @@ App Store:
 - XCode
 - Slack
 
+Individually download and install: 
+
 - [GitHub](https://desktop.github.com/)
 
 ## Commands
