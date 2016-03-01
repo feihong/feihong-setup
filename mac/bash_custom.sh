@@ -1,4 +1,4 @@
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:.
 
 # VIRTUALENV
 # Source: https://virtualenvwrapper.readthedocs.org/en/latest/install.html#shell-startup-file
