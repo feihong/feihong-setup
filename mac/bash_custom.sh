@@ -9,14 +9,14 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # NODE
 
-export NVM_DIR=~/.nvm
-alias startnvm='source $(brew --prefix nvm)/nvm.sh && nvm use 4'
+export NVM_DIR=$HOME/.nvm
+alias startnvm='. $NVM_DIR/nvm.sh && nvm use 4'
 
 # ALIASES
 
 alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox-bin'
 alias hal='echo "say \"what do you think you'\''re doing, dave?\"" | /usr/bin/osascript'
-alias done='afplay "/Library/Audio/Apple Loops/Apple/iLife Sound Effects/Animals/Bark.caf"'
+alias fin='afplay "/Library/Audio/Apple Loops/Apple/iLife Sound Effects/Animals/Bark.caf"'
 alias hey='echo "say \"嘿哟\"" | /usr/bin/osascript'
 alias curse='echo "say \"哎呦我的妈啊\"" | /usr/bin/osascript'
 
