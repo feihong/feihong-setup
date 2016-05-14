@@ -1,3 +1,9 @@
+# https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu
+
+sudo apt-get -y install autoconf automake build-essential libass-dev libfreetype6-dev \
+  libsdl1.2-dev libtheora-dev libtool libx264-dev libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev \
+  libxcb-xfixes0-dev pkg-config texinfo zlib1g-dev yasm
+
 mkdir ~/ffmpeg_sources
 
 # Compile libfdk-aac

@@ -27,7 +27,6 @@
       become: yes
       with_items:
       - imagemagick
-      - ffmpeg
       - xclip
       - atomicparsley
 
