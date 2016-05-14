@@ -28,6 +28,7 @@
       apt: pkg={{item}}
       sudo: yes
       with_items:
+      - git
       - curl
       - imagemagick
       - build-essential
