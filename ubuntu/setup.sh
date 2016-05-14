@@ -1,3 +1,3 @@
-sudo apt-get install -y python-pip
+sudo apt install -y python-pip build-essential python-dev libffi-dev libssl-dev
 sudo pip install ansible markupsafe
-ansible-playbook -K -i inventory setup.yml --ask-sudo-pass
+ansible-playbook --ask-become-pass setup.yml

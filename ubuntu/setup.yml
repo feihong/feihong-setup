@@ -13,35 +13,27 @@
 
     - name: Install common GUI programs
       apt: pkg={{item}}
-      sudo: yes
+      become: yes
       with_items:
       - synaptic
-      - git-cola
       - gimp
       - vlc
       - filezilla
-      # - pidgin
+      - keepassx
       # - calibre
-      # - keepassx
 
     - name: Install common dev tools
       apt: pkg={{item}}
-      sudo: yes
+      become: yes
       with_items:
-      - git
-      - curl
       - imagemagick
-      - build-essential
-      - python-dev
-      - libffi-dev
-      - libssl-dev
+      - ffmpeg
+      - xclip
+      - atomicparsley
 
     - name: Install essential Python tools
       pip: name={{item}}
-      sudo: yes
+      become: yes
       with_items:
       - virtualenvwrapper
       - grin
-
-    - name: Install audio tools
-      include: audio.yml
