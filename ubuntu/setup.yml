@@ -20,9 +20,9 @@
       - gimp
       - vlc
       - filezilla
-      - pidgin
-      - calibre
-      - keepassx
+      # - pidgin
+      # - calibre
+      # - keepassx
 
     - name: Install common dev tools
       apt: pkg={{item}}
