@@ -4,12 +4,12 @@
     - name: Modify .bashrc
       lineinfile: >
         dest=~/.bashrc
-        line='. ~/.bash_custom'
+        line='. ~/.bash_custom.sh'
 
-    - name: Copy .bash_custom
+    - name: Copy .bash_custom.sh
       copy: >
         src=bash_custom.sh
-        dest=~/.bash_custom
+        dest=~/.bash_custom.sh
 
     - name: Install common GUI programs
       apt: pkg={{item}}
