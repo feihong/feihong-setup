@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+"""
+Example usage:
+
+    trim-m4a input.m4a 10 3:40 cut.m4a
+
+"""
+
+
+import sys
+import subprocess
+from pathlib import Path
+import shutil
+
+
+input_file, start_time, end_time, output_file = sys.argv[1:]
+
+# Extract the artwork.
+artwork_file = Path('/tmp/artwork.jpg')
+if artwork_file.exists():
+    artwork_file.unlink()
+cmd = ['ffmpeg', '-i', input_file, str(artwork_file)]
+subprocess.call(cmd)
+
+# Extract the audio.
+audio_file = Path('/tmp/audio.m4a')
+if audio_file.exists():
+    audio_file.unlink()
+cmd = [
+    'ffmpeg', '-i', input_file,
+    '-ss', start_time,
+    '-to', end_time,
+    '-acodec', 'copy',
+    str(audio_file),
+]
+subprocess.call(cmd)
+
+# Add artwork to temp audio file.
+cmd = ['AtomicParsley', str(audio_file), '--artwork', str(artwork_file), '--overWrite']
+subprocess.call(cmd)
+
+# Copy result to output file.
+if output_file == '--overwrite':
+    output_file = input_file
+shutil.copy(str(audio_file), output_file)
