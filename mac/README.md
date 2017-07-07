@@ -9,6 +9,7 @@ App Store:
 
 Individually download and install: 
 
+- [KeePassX](https://www.keepassx.org/downloads)
 - [iTerm2](https://www.iterm2.com/downloads.html)
 - [Atom](https://atom.io/download/mac)
 - [Visual Studio Code](https://code.visualstudio.com/download)
