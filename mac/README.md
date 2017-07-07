@@ -14,7 +14,7 @@ Individually download and install:
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - [GitHub Desktop](https://desktop.github.com/)
 - [Dropbox](https://www.dropbox.com/downloading?os=mac)
-- [Disk Inventory X](http://www.derlien.com/)
+- [Disk Inventory X](http://www.derlien.com/downloads/index.html)
 
 ## Copy SSH Keys
 
