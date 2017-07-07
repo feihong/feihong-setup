@@ -29,7 +29,7 @@ scp ~/.ssh/id_rsa.pub user@computer:/Users/user/.ssh/id_rsa.pub
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install git python3 node nvm
+brew install git python3
 mkdir work
 cd work
 git clone git@github.com/feihong/feihong-setup
