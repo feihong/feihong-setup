@@ -25,11 +25,16 @@ scp ~/.ssh/id_rsa user@computer:/Users/user/.ssh/id_rsa
 scp ~/.ssh/id_rsa.pub user@computer:/Users/user/.ssh/id_rsa.pub
 ```
 
+## Development tools
+
+- [Install node via npm](https://github.com/feihong/node-quickstart#mac--linux)
+- [Install Haskell](https://github.com/feihong/haskell-quickstart#installation)
+
 ## Commands
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install git python3
+brew install python3
 mkdir work
 cd work
 git clone git@github.com/feihong/feihong-setup
