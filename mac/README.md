@@ -11,10 +11,9 @@ Individually download and install:
 
 - [iTerm2](https://www.iterm2.com/downloads.html)
 - [Atom](https://atom.io/download/mac)
-- [GitHub](https://desktop.github.com/)
+- [Visual Studio Code](https://code.visualstudio.com/download)
+- [GitHub Desktop](https://desktop.github.com/)
 - [Dropbox](https://www.dropbox.com/downloading?os=mac)
-- [VirtualBox 5.x](https://www.virtualbox.org/wiki/Downloads)
-- [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
 - [Disk Inventory X](http://www.derlien.com/)
 
 ## Copy SSH Keys
