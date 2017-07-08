@@ -1,0 +1,14 @@
+export PATH=$PATH:~/bin:.
+
+alias vew='source /usr/local/bin/virtualenvwrapper.sh'
+
+alias invm='source ~/.nvm/nvm.sh'
+
+# ALIASES
+
+# alias fin='afplay "/Library/Audio/Apple Loops/Apple/iLife Sound Effects/Animals/Bark.caf"'
+alias fin='say "Command finished, 任务完成了"'
+alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox-bin'
+alias hal='say "what do you think you''re doing, dave?"'
+alias hey='say "嘿哟"'
+alias curse='say "哎呦我的妈啊"'
