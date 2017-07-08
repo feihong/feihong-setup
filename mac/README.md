@@ -19,11 +19,12 @@ Individually download and install:
 
 ## Copy SSH Keys
 
-First, enable Remote Login. Then, from a computer that already has your keys, run:
 
 ```
-scp ~/.ssh/id_rsa user@computer:/Users/user/.ssh/id_rsa
-scp ~/.ssh/id_rsa.pub user@computer:/Users/user/.ssh/id_rsa.pub
+cd ~/.ssh
+nano id_rsa
+chmod 600 id_rsa
+nano id_rsa.pub
 ```
 
 ## Development tools
@@ -35,7 +36,7 @@ scp ~/.ssh/id_rsa.pub user@computer:/Users/user/.ssh/id_rsa.pub
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install python3
+brew install python3 md5sha1sum gnupg
 mkdir work
 cd work
 git clone git@github.com/feihong/feihong-setup
