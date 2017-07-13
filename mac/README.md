@@ -15,6 +15,7 @@ Individually download and install:
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - [GitHub Desktop](https://desktop.github.com/)
 - [Dropbox](https://www.dropbox.com/downloading?os=mac)
+- [VLC](https://www.videolan.org/vlc/download-macosx.html)
 - [Disk Inventory X](http://www.derlien.com/downloads/index.html)
 
 ## Copy SSH Keys
