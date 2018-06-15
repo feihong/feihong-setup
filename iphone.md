@@ -22,6 +22,7 @@
 - Google Docs
 - Google Sheets
 - Google Drive
+- Google Calendar
 - YouTube
 - Meetup
 - Lyft
