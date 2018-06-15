@@ -23,13 +23,14 @@
 - Google Sheets
 - Google Drive
 - Google Calendar
+- Google Voice
 - YouTube
 - Meetup
 - Lyft
 - Google Translate
 - BylineBusiness
 - Chase
-- Google Voice
+- MiniKeePass
 
 Optional
 
