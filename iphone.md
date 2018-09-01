@@ -3,6 +3,7 @@
 ## Settings
 
 - Settings > Display & Brightness > Nightshift > Scheduled (8 pm to 7 am)
+- Settings > General > Keyboard > Add New Keyboard... > Chinese (Simplified) > Pinyin - QWERTY
 
 ## Apps
 
