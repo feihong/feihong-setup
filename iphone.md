@@ -3,10 +3,12 @@
 ## Settings
 
 - Settings > Display & Brightness > Nightshift > Scheduled (8 pm to 7 am)
-- Settings > General > Keyboard > Add New Keyboard... > Chinese (Simplified) > Pinyin - QWERTY
+- Settings > Battery > Battery Percentage
+- Settings > General > Keyboard > Add New Keyboard... > GBoard
 
 ## Apps
 
+- GBoard
 - WeChat
 - Inbox
 - Wunderlist
@@ -32,23 +34,26 @@
 - BylineBusiness
 - Chase
 - MiniKeePass
+- Slack
+- Gmail
+- United
 
 Optional
 
-- Slack
-- Gmail
 - Uber
-- United
 - Eventbrite
-- WhoIsSpy
+
+## Configuration
+
+- Day One > Settings > Sync > Day One
+- Pleco > Registration > Restore iTunes purchases
 
 ## Podcasts
 
+- 99% Invisible
 - Audio - Cognitect Blog
-- Curious City
 - defn
 - Elixir Fountain
-- ElixirTalk
 - Elm Town
 - Embedded
 - Fights Gone By
@@ -57,6 +62,7 @@ Optional
 - Invisibilia
 - LambdaCast
 - Planet Money
+- Frontline: Audiocast
 - Put Your Hands Together
 - Reason Town
 - Rough Translation
@@ -66,6 +72,7 @@ Optional
 - Today, Explained
 - Undiscovered
 - Up First
+- WTF#
+- 代码时间
 - 反派影评
 - 狗熊有话说
-- 99% Invisible
