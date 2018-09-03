@@ -47,6 +47,11 @@ Optional
 
 - Day One > Settings > Sync > Day One
 - Pleco > Registration > Restore iTunes purchases
+- Backup Pleco flashcard database
+  - Hamburger > Import / Export > Backup Database > Done
+  - Hamburger > File Manager > Select backup file > Share / Open in... > Save to Files > iCloud Drive
+- Restore Pleco flashcard database
+  - Hamburger > Restore Database > External Files > iCloud Drive > Select backup file
 
 ## Podcasts
 
