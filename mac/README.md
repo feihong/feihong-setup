@@ -11,6 +11,7 @@ Individually download and install:
 
 - [KeePassX](https://www.keepassx.org/downloads)
 - [iTerm2](https://www.iterm2.com/downloads.html)
+- [Sublime Text 2](https://www.sublimetext.com/2)
 - [Atom](https://atom.io/download/mac)
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - [GitHub Desktop](https://desktop.github.com/)
@@ -28,15 +29,10 @@ chmod 600 id_rsa
 nano id_rsa.pub
 ```
 
-## Development tools
-
-- [Install node via npm](https://github.com/feihong/node-quickstart#mac--linux)
-- [Install Haskell](https://github.com/feihong/haskell-quickstart#installation)
-
 ## Commands
 
 ```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl ~/bin/subl
 brew install python3 md5sha1sum gnupg
 mkdir work
 cd work
