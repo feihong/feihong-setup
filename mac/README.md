@@ -35,7 +35,7 @@ nano id_rsa.pub
 
 ```bash
 ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl ~/bin/subl
-brew install python3 md5sha1sum gnupg
+brew install python3 node
 mkdir work
 cd work
 git clone git@github.com/feihong/feihong-setup
