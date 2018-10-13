@@ -9,6 +9,8 @@ App Store:
 
 Individually download and install: 
 
+- [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+- [Chrome](https://www.google.com/chrome/)
 - [KeePassX](https://www.keepassx.org/downloads)
 - [iTerm2](https://www.iterm2.com/downloads.html)
 - [Sublime Text 2](https://www.sublimetext.com/2)
