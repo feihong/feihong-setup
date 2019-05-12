@@ -10,13 +10,20 @@
   - Windows key and search for 'command prompt'
   - Right-click, choose 'run as administrator'
   - `@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"`
-  - `choco install firefox`
+- `choco install firefox`
+- Install Windows Subsystem for Linux
+  - Windows+x
+  - Windows Powershell (Admin)
+  - `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+  - Restart
 
 ## Debian
 
-tbd
+- Download [netinstall image](https://www.debian.org/distrib/)
+- 
 
 ## Sources
 
 - https://www.groovypost.com/howto/find-your-windows-10-product-key/
 - https://www.howtogeek.com/265054/how-to-easily-reinstall-windows-10-without-the-bloatware/
+- https://docs.microsoft.com/en-us/windows/wsl/install-win10
