@@ -23,7 +23,8 @@
 
 - Download [netinstall image](https://www.debian.org/distrib/)
 - Create bootable USB drive using rufus
-- Shut down computer and turn on again
+- Do full shutdown by holding Shift when clicking 'Shut down'
+- Turn on computer
 
 ## Sources
 
