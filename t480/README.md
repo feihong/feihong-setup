@@ -25,6 +25,7 @@
 - Create bootable USB drive using rufus
 - Do full shutdown by holding Shift when clicking 'Shut down'
 - Turn on computer
+- Press F12 to bring up boot menu
 
 ## Sources
 
