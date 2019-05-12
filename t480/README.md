@@ -15,7 +15,7 @@
   - Windows+x
   - Windows Powershell (Admin)
   - `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
-  - Restart
+  - Wait, then hit Enter to restart
 
 ## Debian
 
