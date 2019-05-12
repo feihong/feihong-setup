@@ -10,7 +10,7 @@
   - Windows key and search for 'command prompt'
   - Right-click, choose 'run as administrator'
   - `@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"`
-- `choco install firefox`
+- `choco install firefox rufus`
 - Install Debian via Windows Subsystem for Linux
   - Windows+x
   - Windows Powershell (Admin)
@@ -22,10 +22,12 @@
 ## Debian
 
 - Download [netinstall image](https://www.debian.org/distrib/)
-- 
+- Create bootable USB drive using rufus
+- Shut down computer and turn on again
 
 ## Sources
 
 - https://www.groovypost.com/howto/find-your-windows-10-product-key/
 - https://www.howtogeek.com/265054/how-to-easily-reinstall-windows-10-without-the-bloatware/
 - https://docs.microsoft.com/en-us/windows/wsl/install-win10
+- https://www.howtogeek.com/331053/how-to-mount-removable-drives-and-network-locations-in-the-windows-subsystem-for-linux/
