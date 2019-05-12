@@ -3,6 +3,7 @@
 ## Windows 10
 
 - Get and store product key: `wmic path SoftwareLicensingService get OA3xOriginalProductKey`
+- Update firmware
 - Remove bloatware
   - Settings > Update & Security > Recovery > Learn how to start fresh with a clean installation of Windows
   - Fresh start > Additional info > Get started
@@ -33,3 +34,4 @@
 - https://www.howtogeek.com/265054/how-to-easily-reinstall-windows-10-without-the-bloatware/
 - https://docs.microsoft.com/en-us/windows/wsl/install-win10
 - https://www.howtogeek.com/331053/how-to-mount-removable-drives-and-network-locations-in-the-windows-subsystem-for-linux/
+- https://markontech.com/linux/tutorial-how-to-dual-boot-windows-10-and-debian-9/
