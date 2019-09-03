@@ -28,6 +28,23 @@
 - Turn on computer
 - Press F12 to bring up boot menu
 
+## Manual
+
+### Use [Ninite](ninite.com) to install apps
+
+- Chrome
+- Firefox
+- KeePass 2
+- Visual Studio Code
+- Dropbox
+- VLC
+- 7-Zip
+- Revo
+
+### Configure Visual Studio Code
+
+- Install Remote development extension
+
 ## Sources
 
 - https://www.groovypost.com/howto/find-your-windows-10-product-key/

@@ -4,25 +4,8 @@
 
 ```
 sudo apt updateg
-sudo apt install git
+sudo apt install git curl unzip bubblewrap
 ```
-
-## Manual
-
-### Use [Ninite](ninite.com) to install apps
-
-- Chrome
-- Firefox
-- KeePass 2
-- Visual Studio Code
-- Dropbox
-- VLC
-- 7-Zip
-- Revo
-
-### Configure Visual Studio Code
-
-- Install Remote development extension
 
 ### Copy ssh keys
 
