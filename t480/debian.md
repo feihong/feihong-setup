@@ -9,7 +9,7 @@ sudo apt install git
 
 ## Manual
 
-Use [Ninite](ninite.com) to download the following applications:
+### Use [Ninite](ninite.com) to install apps
 
 - Chrome
 - Firefox
@@ -18,9 +18,13 @@ Use [Ninite](ninite.com) to download the following applications:
 - Dropbox
 - VLC
 - 7-Zip
-- Revo  
+- Revo
 
-Copy ssh keys
+### Configure Visual Studio Code
+
+- Install Remote development extension
+
+### Copy ssh keys
 
 ```
 cd ~/.ssh
