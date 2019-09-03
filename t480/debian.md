@@ -14,6 +14,7 @@ Use [Ninite](ninite.com) to download the following applications:
 - Chrome
 - Firefox
 - KeePass 2
+- Visual Studio Code
 - Dropbox
 - VLC
 - 7-Zip
