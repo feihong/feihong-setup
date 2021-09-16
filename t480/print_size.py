@@ -1,14 +1,9 @@
 import subprocess
 import sys
 from pathlib import Path
+from secrets import folders
 
-folders_file = sys.argv[1]
-
-folders = [
-  str(Path('~/' + f).expanduser())
-  for f in
-  Path(folders_file).read_text().strip().splitlines()
-]
+folders = [str(Path('~/' + f).expanduser()) for f in folders]
 
 cmd = ['du', '-shc'] + folders
 print(' '.join(cmd))

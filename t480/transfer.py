@@ -3,15 +3,17 @@ import sys
 import os
 import subprocess
 from pathlib import Path
+from secrets import folders, server
 
 user = str(Path('~').expanduser()).split('/')[-1]
-folders = sys.argv[1]
-server = os.environ['SERVER']
+
+files_from_file = 'files-from.txt'
+Path(files_from_file).write_text('\n'.join(folders))
 
 cmd = [
   'rsync', '-arR', '--numeric-ids', '--progress',
-  # '--dry-run',
-  f'--files-from={folders}',
+  '--dry-run',
+  f'--files-from={files_from_file}',
   '--exclude=.DS_Store',
   f'/Users/{user}',                # source directory
   f'{user}@{server}:/home/{user}', # target directory
