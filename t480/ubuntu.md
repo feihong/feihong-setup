@@ -17,6 +17,7 @@ Install and start ssh server:
 
     sudo apt-get install ssh
     sudo service ssh start
+    sudo update-rc.d ssh disable  # prevent ssh server from starting automatically
 
 Copy `id_rsa` and `id_rsa.pub` files into `~/.ssh` folder.
 
@@ -25,22 +26,28 @@ Copy `id_rsa` and `id_rsa.pub` files into `~/.ssh` folder.
     cat id_rsa.pub > authorized_keys
     chmod 644 authorized_keys
 
+Add to `~/.ssh/config`:
+
+```
+Host *
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_rsa
+```
+
 ## Configuration
 
 ## Applications
-
-    pip install youtube-dl mitmproxy beets
 
 - [tarsnap](https://www.tarsnap.com/pkg-deb.html)
 
 ## UI Applications
 
+- KeePassXC
 - VS Code
 - Chrome
 - WireGuard
 - Slack
 - Zoom
-- KeePassXC
 - Brave
 - VLC
 - FileZilla
