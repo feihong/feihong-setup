@@ -13,8 +13,19 @@
 1. Choose 'Install Ubuntu'
 1. Choose 'minimal installation'
 
-## Configuration
+Install and start ssh server:
 
+    sudo apt-get install ssh
+    sudo service ssh start
+
+Copy `id_rsa` and `id_rsa.pub` files into `~/.ssh` folder.
+
+    chmod 600 id_rsa
+    chmod 644 id_rsa.pub
+    cat id_rsa.pub > authorized_keys
+    chmod 644 authorized_keys
+
+## Configuration
 
 ## Applications
 
@@ -29,7 +40,7 @@
 - WireGuard
 - Slack
 - Zoom
-- KeePass
+- KeePassXC
 - Brave
 - VLC
 - FileZilla
