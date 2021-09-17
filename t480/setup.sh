@@ -20,3 +20,8 @@ pyenv global 3.9.7
 pip install --user bpython mitmproxy youtube-dl beets
 
 # Node
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
+source ~/.bashrc
+
+nvm install 14
