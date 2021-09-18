@@ -42,16 +42,19 @@ Host *
 
 ## UI Applications
 
-- KeePassXC
-- VS Code
-- Chrome
-- WireGuard
-- Slack
-- Zoom
-- Brave
-- VLC
+Install using snap:
+
+    sudo snap install brave code keepassxc slack vlc wireguard-ammp
+
+Install via Ubuntu Software
+
 - FileZilla
 - Dropbox
+
+Install manually
+
+- Chrome
+- Zoom
 
 ## Configuration
 
@@ -64,7 +67,6 @@ Host *
 - Add Chinese input
   - Language support > Install/remove languages... > Chinese (simplified)
   - Region & language > Input sources > Chinese (Intelligent Pinyin)
-
 
 ## Questions
 
