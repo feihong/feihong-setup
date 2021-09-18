@@ -53,13 +53,18 @@ Host *
 - FileZilla
 - Dropbox
 
-## Startup applications
+## Configuration
 
-- Terminal
-- Firefox
-- Chrome
-- Slack
-- Wireguard
+- Startup applications
+  - Terminal
+  - Firefox
+  - Chrome
+  - Slack
+  - Wireguard
+- Add Chinese input
+  - Language support > Install/remove languages... > Chinese (simplified)
+  - Region & language > Input sources > Chinese (Intelligent Pinyin)
+
 
 ## Questions
 
@@ -69,3 +74,4 @@ Host *
 
 - [Create a bootable USB stick on Windows](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows)
 - [Install Ubuntu desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop)
+- [Ubuntu 20 Chinese input support](https://sourceexample.com/article/en/30fff033c90c212e9a7f17543cdc4df5/)
