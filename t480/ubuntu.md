@@ -51,6 +51,15 @@ Host *
 - Brave
 - VLC
 - FileZilla
+- Dropbox
+
+## Startup applications
+
+- Terminal
+- Firefox
+- Chrome
+- Slack
+- Wireguard
 
 ## Questions
 

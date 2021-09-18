@@ -1,5 +1,8 @@
 sudo apt-get update
 
+# Utilities
+sudo apt-get install curl alacarte
+
 # Git
 sudo apt-get install git
 git config --global user.name "John Doe"
