@@ -44,7 +44,7 @@ Host *
 
 Install using snap:
 
-    sudo snap install brave code keepassxc slack vlc wireguard-ammp
+    sudo snap install brave code keepassxc slack vlc krita
 
 Install via Ubuntu Software
 
@@ -67,6 +67,28 @@ Install manually
 - Add Chinese input
   - Language support > Install/remove languages... > Chinese (simplified)
   - Region & language > Input sources > Chinese (Intelligent Pinyin)
+
+VS Code settings
+
+```json
+{
+  "editor.rulers": [120],
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "all",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "javascript.format.enable": true,
+  "files.associations": {
+    "*.atd": "ocaml"
+  },
+  "diffEditor.renderSideBySide": true,
+  "workbench.colorTheme": "Default Light+",
+  "editor.detectIndentation": false,
+  "extensions.ignoreRecommendations": true
+}
+```
 
 ## Questions
 
