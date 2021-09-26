@@ -25,6 +25,8 @@ Copy `id_rsa` and `id_rsa.pub` files into `~/.ssh` folder.
     cat id_rsa.pub > authorized_keys
     chmod 644 authorized_keys
 
+Now disable password authentication by setting `PasswordAuthentication no` in `/etc/ssh/sshd_config`.
+
 ## Configuration
 
 ## Applications
