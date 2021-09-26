@@ -17,35 +17,80 @@ Install and start ssh server:
 
     sudo apt-get install ssh
     sudo service ssh start
+    sudo update-rc.d ssh disable  # prevent ssh server from starting automatically
 
-Copy `id_rsa` and `id_rsa.pub` files into `~/.ssh` folder.
+On source computer, use `scp` to copy `id_rsa` and `id_rsa.pub` files into `~/.ssh` folder.
 
     chmod 600 id_rsa
     chmod 644 id_rsa.pub
     cat id_rsa.pub > authorized_keys
     chmod 644 authorized_keys
 
-Now disable password authentication by setting `PasswordAuthentication no` in `/etc/ssh/sshd_config`.
+Disable password authentication by setting `PasswordAuthentication no` in `/etc/ssh/sshd_config`.
+
+Add to `~/.ssh/config`:
+
+```
+Host *
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_rsa
+```
 
 ## Configuration
 
 ## Applications
 
-    pip install youtube-dl mitmproxy beets
-
 - [tarsnap](https://www.tarsnap.com/pkg-deb.html)
 
 ## UI Applications
 
-- VS Code
-- Chrome
-- WireGuard
-- Slack
-- Zoom
-- KeePassXC
-- Brave
-- VLC
+Install using snap:
+
+    sudo snap install brave code keepassxc slack vlc krita
+
+Install via Ubuntu Software
+
 - FileZilla
+- Dropbox
+
+Install manually
+
+- Chrome
+- Zoom
+
+## Configuration
+
+- Startup applications
+  - Terminal
+  - Firefox
+  - Chrome
+  - Slack
+  - Wireguard
+- Add Chinese input
+  - Language support > Install/remove languages... > Chinese (simplified)
+  - Region & language > Input sources > Chinese (Intelligent Pinyin)
+
+VS Code settings
+
+```json
+{
+  "editor.rulers": [120],
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "all",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "javascript.format.enable": true,
+  "files.associations": {
+    "*.atd": "ocaml"
+  },
+  "diffEditor.renderSideBySide": true,
+  "workbench.colorTheme": "Default Light+",
+  "editor.detectIndentation": false,
+  "extensions.ignoreRecommendations": true
+}
+```
 
 ## Questions
 
@@ -55,3 +100,4 @@ Now disable password authentication by setting `PasswordAuthentication no` in `/
 
 - [Create a bootable USB stick on Windows](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows)
 - [Install Ubuntu desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop)
+- [Ubuntu 20 Chinese input support](https://sourceexample.com/article/en/30fff033c90c212e9a7f17543cdc4df5/)
