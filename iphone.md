@@ -4,44 +4,60 @@
 
 - Settings > Display & Brightness > Nightshift > Scheduled (8 pm to 7 am)
 - Settings > Battery > Battery Percentage
-- Settings > General > Keyboard > Add New Keyboard... > GBoard
 
 ## Apps
 
-- GBoard
-- WeChat
-- Inbox
-- Wunderlist
-- Dropbox
-- Simplenote
-- Chrome
-- Transit
-- Hangouts
-- Day One
-- Pleco
-- Safari Queue
-- FB Messenger
-- Google Photos
-- Google Docs
-- Google Sheets
-- Google Drive
-- Google Calendar
-- Google Voice
-- YouTube
-- Meetup
-- Lyft
-- Google Translate
+- 哔哩哔哩漫画
+- Authy
+- Brave
 - BylineBusiness
 - Chase
-- MiniKeePass
-- Slack
+- Chrome
+- Day One
+- Divvy
+- Dropbox
+- Facebook Messenger
+- Firefox
 - Gmail
-- United
-
-Optional
-
+- Google Calendar
+- Google Chat
+- Google Docs
+- Google Drive
+- Google Photos
+- Google Sheets
+- KeePassium
+- Lyft
+- Notion
+- O'Reilly
+- Okta Verify
+- Pleco
+- Simplenote
+- Slack
+- StreetVoice
+- Transit
 - Uber
-- Eventbrite
+- United
+- Ventra
+- Webtoon
+- WeChat
+- YouTube
+- Zoom
+
+## Podcasts
+
+- ChinaTalk
+- Functional Futures
+- Functional Geekery
+- Gastropod
+- Jack Slack Podcast
+- Lovett or Leave It
+- Serial
+- Sinica Podcast
+- Talk Python To Me
+- The Array Cast
+- The Caixin-Sinica Business Brief
+- Today, Explained
+- Up First
 
 ## Configuration
 
@@ -52,32 +68,3 @@ Optional
   - Hamburger > File Manager > Select backup file > Share / Open in... > Save to Files > iCloud Drive
 - Restore Pleco flashcard database
   - Hamburger > Restore Database > External Files > iCloud Drive > Select backup file
-
-## Podcasts
-
-- 99% Invisible
-- Audio - Cognitect Blog
-- defn
-- Elixir Fountain
-- Elm Town
-- Embedded
-- Fights Gone By
-- Functional Geekery
-- Gastropod
-- Invisibilia
-- LambdaCast
-- Planet Money
-- Frontline: Audiocast
-- Put Your Hands Together
-- Reason Town
-- Rough Translation
-- S-Town
-- Serial
-- Soft Skills Engineering
-- Today, Explained
-- Undiscovered
-- Up First
-- WTF#
-- 代码时间
-- 反派影评
-- 狗熊有话说
