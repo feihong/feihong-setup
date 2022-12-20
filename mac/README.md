@@ -9,6 +9,7 @@ Copy SSH keys
     mv ~/Downloads/id_rsa .
     mv ~/Downloads/id_rsa.pub .
     chmod 600 id_rsa
+    ssh-add  # add ~/.ssh/id_rsa to ssh agent
 
 Download this project
 
