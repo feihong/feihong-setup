@@ -46,6 +46,7 @@ Kitty
 App Store
 
 - Slack
+- WireGuard
 
 Individually download and install
 
@@ -53,6 +54,7 @@ Individually download and install
 - [Disk Inventory X](http://www.derlien.com/downloads/index.html)
 - [Dropbox](https://www.dropbox.com/downloading?os=mac)
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+- [Hubstaff](https://app.hubstaff.com/download)
 - [iTerm2](https://iterm2.com/downloads.html)
 - [KeePassXC](https://keepassxc.org/)
 - [SageMath](https://github.com/3-manifolds/Sage_macOS/releases)
