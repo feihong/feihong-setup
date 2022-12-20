@@ -66,11 +66,24 @@ Individually download and install
 
 ## Configuration
 
-Set system voice
+Set system voice to Chinese
 
-- Go to System Settings > Accessibility > Spoken Content
-- Set System speech language to Chinese
-- Set System Voice to Lili (or some other voice that doesn't use more than 10MB)
+- System Settings > Accessibility > Spoken Content
+- Set `System speech language` to Chinese
+- Set `System Voice` to Lili (or some other voice that doesn't use more than 10MB)
+
+Configure iTerm2
+
+- iTerm2 > Preferences > Profiles
+- Set `Working Directory` to `Reuse previous session's directory`
+
+Configure Music
+
+- Music > Preferences > General
+  - Uncheck `Apple Music and iTunes Store`
+- Music > Preferences > Files
+  - Uncheck `Keep Music Media folder organized` and `Copy files to Music Media folder when adding to library`
+
 
 ## Miscellaneous Commands
 

@@ -8,23 +8,24 @@ Books
 Comics
 Documents
 Games
-Music/music
+Music/tracks
 Setup
 Videos
 """.strip().splitlines()
 
+home_dir = Path('~').expanduser()
+user = str(home_dir).split('/')[-1]
 
-user = str(Path('~').expanduser()).split('/')[-1]
-
-files_from_file = 'files-from.txt'
-Path(files_from_file).write_text('\n'.join(folders))
+source_directories = [str(home_dir / folder) for folder in folders]
 
 cmd = [
-  'rsync', '-arR', '--numeric-ids', '--progress',
+  'rsync',
   '--dry-run', # comment this out when you want to move the files over for real
-  f'--files-from={files_from_file}',
+  '-arR', 
+  '--numeric-ids', 
+  '--progress',
   '--exclude=.DS_Store',
-  f'/Users/{user}',                 # source directory
+] + source_directories + [
   f'{user}@{server}:/Users/{user}', # target directory
 ]
 
