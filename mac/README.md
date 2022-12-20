@@ -53,11 +53,21 @@ Individually download and install
 - [Disk Inventory X](http://www.derlien.com/downloads/index.html)
 - [Dropbox](https://www.dropbox.com/downloading?os=mac)
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+- [iTerm2](https://iterm2.com/downloads.html)
 - [KeePassXC](https://keepassxc.org/)
 - [SageMath](https://github.com/3-manifolds/Sage_macOS/releases)
+- [SpiderOak One](https://crossclave.com/opendownload/)
 - [Sublime Text](https://www.sublimetext.com/download)
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - [VLC](https://www.videolan.org/vlc/download-macosx.html)
+
+## Configuration
+
+Set system voice
+
+- Go to System Settings > Accessibility > Spoken Content
+- Set System speech language to Chinese
+- Set System Voice to Lili (or some other voice that doesn't use more than 10MB)
 
 ## Miscellaneous Commands
 
