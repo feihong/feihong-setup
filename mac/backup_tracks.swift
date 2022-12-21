@@ -13,10 +13,8 @@ guard let library = try? ITLibrary(apiVersion: "1.1") else {
   exit(1)
 }
 
-let playlists = library.allPlaylists
-
 func getPlaylist(by: (ITLibPlaylist) -> Bool) -> ITLibPlaylist? {
-  for playlist in playlists {
+  for playlist in library.allPlaylists {
     if by(playlist) {
       return playlist
     }
@@ -24,22 +22,9 @@ func getPlaylist(by: (ITLibPlaylist) -> Bool) -> ITLibPlaylist? {
   return nil
 }
 
-let playlist = CommandLine.arguments.count <= 1
-  ? getPlaylist(by: {$0.distinguishedKind == .kindMusic})
-  : getPlaylist(by: {$0.name == CommandLine.arguments[1]})
-
-guard let playlist = playlist else {
+guard let playlist = getPlaylist(by: {$0.distinguishedKind == .kindMusic}) else {
   print("Failed to access music playlist")
   exit(1)
-}
-
-let dateFormatter = DateFormatter()
-dateFormatter.dateFormat = "yyyy-MM-dd"
-
-extension Date {
-  func getFormattedDate(formatter: DateFormatter) -> String {
-    return formatter.string(from: self)
-  }
 }
 
 let dictArray = playlist.items.map { track in
@@ -60,3 +45,5 @@ let directoryUrl = URL(fileURLWithPath: FileManager.default.currentDirectoryPath
 let outputUrl = directoryUrl.appendingPathComponent("tracks.json")
 
 try! jsonData.write(to: outputUrl)
+
+print("Wrote \(dictArray.count) items to tracks.json")
