@@ -12,8 +12,16 @@ On target machine, allow SSH login from another machine
 
 On source machine
 
-- Create `secrets.py` and fill in the target machine's IP address
-- Run `python migrate_data.py`
+    export TARGET_IP=<IP address from Remote Login step>
+    python migrate_data.py
+
+## Backup music metadata
+
+    swift backup_tracks.swift
+    swift backup_playlists.swift
+    python transfer_music_metadata.py
+
+## Teardown
 
 On target machine
 
@@ -22,7 +30,3 @@ On target machine
 - Click (i) next to Remote Login to see the ssh command which contains the IP address
 - System Settings > Displays > Advanced...
 - Uncheck `Prevent automatic sleeping on power adapter when the display is off`
-
-## Backup music metadata
-
-Run `swift backup_tracks.swift`
