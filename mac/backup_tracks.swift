@@ -47,11 +47,10 @@ let dictArray = playlist.items.map { track in
     "title": track.title,
     "artist": track.artist?.name ?? "",
     "album": track.album.title ?? "",
-    "rating": track.rating / 20,
+    "rating": track.rating / 20,  // 0-5
     "genre": track.genre,
     "comments": track.comments ?? "",
     "location": track.location!.path,
-    "added": track.addedDate?.getFormattedDate(formatter: dateFormatter) ?? "",
   ]
 }
 
