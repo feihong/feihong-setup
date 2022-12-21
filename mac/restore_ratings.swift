@@ -1,8 +1,12 @@
 // cat music.swift restore_ratings.swift | swift -
 import Foundation
 
-func getRatingsMap() -> Dictionary<String, Int> {
-  let downloadsDir = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask)[0]
+func makeRatingsMap() -> Dictionary<String, Int> {
+  let downloadsDir = FileManager.default.url(
+    for: .downloadsDirectory, 
+    in: .userDomainMask,
+    appropriateFor: nil,
+    create: false)
   let inputUrl = downloadsDir.appendingPathComponent("tracks.json")
   guard let data = try? Data(contentsOf: inputUrl, options: .mappedIfSafe) else {
     print("JSON file coulnd't be read from")
@@ -45,7 +49,7 @@ let playlist = getMusicPlaylist()!
 let tracks = playlist.tracks!()
 print("Found \(tracks.count) tracks")
 
-let ratingsMap = getRatingsMap()
+let ratingsMap = makeRatingsMap()
 
 for case let track as MusicFileTrack in playlist.tracks!() {
   let path = track.location!.path
