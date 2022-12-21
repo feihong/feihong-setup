@@ -30,10 +30,25 @@ func getPlaylist(name: String) -> ITLibPlaylist? {
 
 }
 
-for playlistName in playlistNames {
-  guard let playlist = getPlaylist(name: playlistName) else {
-    print("Could not find playlist \(playlistName)")
+func exportPlaylist(_ playlist: ITLibPlaylist) {
+  let dictArray = playlist.items.map { track in
+    [
+      "title": track.title,
+      "artist": track.artist?.name ?? "",
+      "location": track.location!.path,
+    ]
+  }
+  let jsonData = try! JSONSerialization.data(withJSONObject: dictArray, options: .prettyPrinted)
+  let directoryUrl = URL(fileURLWithPath: FileManager.default.currentDirectoryPath, isDirectory: true)
+  let outputUrl = directoryUrl.appendingPathComponent("\(playlist.name).json")
+  try! jsonData.write(to: outputUrl)
+}
+
+for name in playlistNames {
+  guard let playlist = getPlaylist(name: name) else {
+    print("Could not find playlist \(name)")
     continue
   }
+  exportPlaylist(playlist)
   print("\(playlist.name) - \(playlist.items.count)")
 }
