@@ -1,11 +1,12 @@
-# https://unix.stackexchange.com/questions/174674/rsync-a-list-of-directories-with-absolute-path-in-text-file
+import os
 import subprocess
 from pathlib import Path
-from settings import server
+
+target_ip = os.environ['TARGET_IP']
 
 folders = """
-# Books
-# Comics
+Books
+Comics
 Documents
 Games
 Music/tracks
@@ -28,8 +29,11 @@ cmd = [
   '--progress',
   '--exclude=.DS_Store',
 ] + source_directories + [
-  f'{user}@{server}:/Users/{user}', # target directory
+  f'{user}@{target_ip}:/Users/{user}', # target directory
 ]
 
-print(' '.join(cmd))
-subprocess.run(cmd)
+print('Command:', ' '.join(cmd))
+answer = input('Proceed? [y/n] ')
+
+if answer.strip().lower() == 'y':
+  subprocess.run(cmd)
