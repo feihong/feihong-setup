@@ -88,3 +88,7 @@ Configure Music
 ## Miscellaneous Commands
 
     echo 'export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"' >> ~/.zprofile
+
+## Notes
+
+While [pytunes](https://github.com/hile/pytunes) did seem promising, parts of it are broken and it ultimately doesn't have the API that I'm looking for, which is to add existing tracks to playlists. 

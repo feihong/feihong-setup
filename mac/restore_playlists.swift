@@ -22,19 +22,9 @@ func makeTracksMap(_ tracks: SBElementArray) -> [String: MusicFileTrack] {
     result[key] = track
   }
   return result
-} 
-
-guard let app: MusicApplication = SBApplication(bundleIdentifier: "com.apple.Music") else {
-  print("Could not load Music app")
-  exit(1)
 }
 
-guard let library = getLibrary() else {
-  print("Could not access Library")
-  exit(1)
-}
-
-func getLibrary() -> MusicSource? {
+func getLibrary(app: MusicApplication) -> MusicSource? {
   for case let source as MusicSource in app.sources!() {
     if source.name! == "Library" {
       return source
@@ -43,11 +33,29 @@ func getLibrary() -> MusicSource? {
   return nil
 }
 
-func addPlaylist(name: String) {
-  // totally stuck here
-  // let thing = app.class("forScriptingClass:")
+guard let app: MusicApplication = SBApplication(bundleIdentifier: "com.apple.Music") else {
+  print("Could not load Music app")
+  exit(1)
 }
 
+guard let library = getLibrary(app: app) else {
+  print("Could not access Library")
+  exit(1)
+}
+
+func addPlaylist(name: String) {
+  let sbApp = app as! SBApplication
+  guard let class_ = sbApp.`class`(forScriptingClass:"playlist") as? NSObject.Type else {
+    print("Could not get playlist class")
+    exit(1)
+  }
+  let playlist = class_.init()
+  // this never succeeds:
+  guard let playlist = playlist as? MusicPlaylist else {
+    print("Could not cast playlist as MusicPlaylist")
+    exit(1)
+  }
+}
 
 // func getMusicPlaylist() -> MusicPlaylist? {
 //   for case let playlist as MusicPlaylist in app.playlists!() {
