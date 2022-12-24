@@ -52,6 +52,7 @@ App Store
 Individually download and install
 
 - [Chrome](https://www.google.com/chrome/)
+- [DB Browser for SQLite](https://sqlitebrowser.org/dl/)
 - [Disk Inventory X](http://www.derlien.com/downloads/index.html)
 - [Dropbox](https://www.dropbox.com/downloading?os=mac)
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
