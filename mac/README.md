@@ -46,6 +46,7 @@ Kitty
 
 App Store
 
+- Simple Comic
 - Slack
 - WireGuard
 
