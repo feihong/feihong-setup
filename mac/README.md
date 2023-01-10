@@ -56,6 +56,7 @@ Individually download and install
 - [DB Browser for SQLite](https://sqlitebrowser.org/dl/)
 - [Disk Inventory X](http://www.derlien.com/downloads/index.html)
 - [Dropbox](https://www.dropbox.com/downloading?os=mac)
+- [FileZilla](https://filezilla-project.org/download.php?type=client)
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 - [Hubstaff](https://app.hubstaff.com/download)
 - [iTerm2](https://iterm2.com/downloads.html)
