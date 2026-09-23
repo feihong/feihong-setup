@@ -55,11 +55,12 @@ Individually download and install
 - [FileZilla](https://filezilla-project.org/download.php?type=client)
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 - [Ghostty](https://ghostty.org/download)
-- [iTerm2](https://iterm2.com/downloads.html)
+- ~~[iTerm2](https://iterm2.com/downloads.html)~~
 - [KeePassXC](https://keepassxc.org/download/#macos)
 - [SpiderOak One](https://crossclave.com/opendownload/)
 - ~~[Sublime Text](https://www.sublimetext.com/download)~~
 - [Visual Studio Code](https://code.visualstudio.com/download)
+  - Run command `Install 'code' command in PATH
 - [VLC](https://www.videolan.org/vlc/download-macosx.html)
 - [Zed](https://zed.dev/download)
 
