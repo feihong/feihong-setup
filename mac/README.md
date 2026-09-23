@@ -2,45 +2,40 @@
 
 ## Command Line
 
-Copy SSH keys
+```bash
+# Copy SSH keys
+mdkir ~/.ssh
+cd ~/.ssh
+mv ~/Downloads/id_rsa .
+mv ~/Downloads/id_rsa.pub .
+chmod 600 id_rsa
+ssh-add  # add ~/.ssh/id_rsa to ssh agent
 
-    mdkir ~/.ssh
-    cd ~/.ssh
-    mv ~/Downloads/id_rsa .
-    mv ~/Downloads/id_rsa.pub .
-    chmod 600 id_rsa
-    ssh-add  # add ~/.ssh/id_rsa to ssh agent
+# Install dev tools (opens a modal that you need to manually switch to)
+xcode-select --install
 
-Download this project
+# Download this project
+mkdir ~/work
+cd ~/work
+git clone git@github.com:feihong/feihong-setup
 
-    mkdir ~/work
-    cd ~/work
-    git clone git@github.com:feihong/feihong-setup
+# Configure Git
+git config --global user.email "name@example.com"
+git config --global user.name "First Last"
 
-Homebrew
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-    xcode-select --install
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Install asdf
+brew install asdf
 
-Git
-
-    git config --global user.email "name@example.com"
-    git config --global user.name "Feihong Hsu"
-
-Kitty
-
-    curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
-
-[Asdf](https://asdf-vm.com/guide/getting-started.html#_2-download-asdf)
-
-    git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
-
-[Python](https://github.com/asdf-community/asdf-python#use)
-
-    brew install openssl readline sqlite3 xz zlib tcl-tk
-    asdf plugin add python
-    asdf install python latest
-    asdf global python latest
+# Install Python
+#brew install openssl readline sqlite3 xz zlib tcl-tk
+asdf plugin add python
+asdf install python latest
+asdf global python latest
+asdf set -u python latest
+```
 
 ## UI Installation
 
