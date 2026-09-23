@@ -23,18 +23,21 @@ git clone git@github.com:feihong/feihong-setup
 git config --global user.email "name@example.com"
 git config --global user.name "First Last"
 
+# Create /usr/local/bin for third-party commands
+sudo mkdir -p -m 775 /usr/local/bin
+
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo >> ~/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> /Users/fhsu/.zprofile
+source ~/.zprofile
 
-# Install asdf
-brew install asdf
+# Install asdf and uv
+brew install asdf uv
 
-# Install Python
-#brew install openssl readline sqlite3 xz zlib tcl-tk
-asdf plugin add python
-asdf install python latest
-asdf global python latest
-asdf set -u python latest
+# Install shortcut for Visual Studio Code
+sudo ln -fs "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" /usr/local/bin/
+sudo ln -fs "/Applications/Zed.app/Contents/MacOS/cli" /usr/local/bin/zed
 ```
 
 ## UI Installation
@@ -60,7 +63,6 @@ Individually download and install
 - [SpiderOak One](https://crossclave.com/opendownload/)
 - ~~[Sublime Text](https://www.sublimetext.com/download)~~
 - [Visual Studio Code](https://code.visualstudio.com/download)
-  - Run command `Install 'code' command in PATH
 - [VLC](https://www.videolan.org/vlc/download-macosx.html)
 - [Zed](https://zed.dev/download)
 
