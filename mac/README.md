@@ -1,8 +1,18 @@
 # Mac OS X
 
+## Quickstart
+
+- Sign in to [Dropbox](https://www.dropbox.com/downloading?os=mac)
+- Open [KeePassXC](https://keepassxc.org/download/#macos) to get your SSH key
+- Open a [terminal](https://ghostty.org/download)
+- Run `xcode-select --install`, switch to modal, and click `Install`
+- Clone this repo by running `mkdir ~/work && cd ~/work && git clone git@github.com:feihong/feihong-setup`
+
 ## Command Line
 
 ```bash
+cp mac/.zprofile ~/.zprofile
+
 # Copy SSH keys
 mdkir ~/.ssh
 cd ~/.ssh
@@ -10,14 +20,6 @@ mv ~/Downloads/id_rsa .
 mv ~/Downloads/id_rsa.pub .
 chmod 600 id_rsa
 ssh-add  # add ~/.ssh/id_rsa to ssh agent
-
-# Install dev tools (opens a modal that you need to manually switch to)
-xcode-select --install
-
-# Download this project
-mkdir ~/work
-cd ~/work
-git clone git@github.com:feihong/feihong-setup
 
 # Configure Git
 git config --global user.email "name@example.com"
@@ -28,14 +30,11 @@ sudo mkdir -p -m 775 /usr/local/bin
 
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo >> ~/.zprofile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> /Users/fhsu/.zprofile
-source ~/.zprofile
 
 # Install asdf and uv
 brew install asdf uv
 
-# Install shortcut for Visual Studio Code
+# Install command line shortcuts for editors
 sudo ln -fs "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" /usr/local/bin/
 sudo ln -fs "/Applications/Zed.app/Contents/MacOS/cli" /usr/local/bin/zed
 ```
@@ -61,6 +60,7 @@ Individually download and install
 - ~~[iTerm2](https://iterm2.com/downloads.html)~~
 - [KeePassXC](https://keepassxc.org/download/#macos)
 - [SpiderOak One](https://crossclave.com/opendownload/)
+- [Steam](https://store.steampowered.com/about/download)
 - ~~[Sublime Text](https://www.sublimetext.com/download)~~
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - [VLC](https://www.videolan.org/vlc/download-macosx.html)
@@ -68,28 +68,39 @@ Individually download and install
 
 ## Configuration
 
-Set system voice to Chinese
+System Settings
 
-- System Settings > Accessibility > Spoken Content
-- Set `System speech language` to Chinese
-- Set `System Voice` to Lili (or some other voice that doesn't use more than 10MB)
+- Accessibility > Read & Speak
+  - Set `System speech language` to Mandarin
+  - Set `System Voice` to Lilian (Premium) by clicking ℹ️
+- Trackpad
+  - Enable Tap to click
+- Desktop & Dock
+  - Enable Automatically hide and show Dock
+- Menu Bar
+  - Battery > Battery Options... > Enable Show Percentage
 
-Configure iTerm2
+Uninstall desktop widgets
 
-- iTerm2 > Preferences > Profiles
-- Set `Working Directory` to `Reuse previous session's directory`
+- Fn+F11 to show the desktop
+- Right-click on desktop and click Edit Widgets...
+- Click the - icon on each widget to uninstall it
+- Click Done
 
-Configure Music
+Music
 
-- Music > Preferences > General
-  - Uncheck `Apple Music and iTunes Store`
-- Music > Preferences > Files
-  - Uncheck `Keep Music Media folder organized` and `Copy files to Music Media folder when adding to library`
+- Preferences
+  - General
+    - Disable Apple Music
+    - Disable iTunes Store
+  - Files
+    - Disable Keep Media folder organized
+    - Disable Copy files to Media folder when adding to library
 
+~~Configure iTerm2~~
 
-## Miscellaneous Commands
-
-    echo 'export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"' >> ~/.zprofile
+- Preferences > Profiles
+  - Set `Working Directory` to `Reuse previous session's directory`
 
 ## Notes
 

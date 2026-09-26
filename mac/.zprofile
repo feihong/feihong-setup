@@ -1,5 +1,4 @@
-# Copy into ~/.zprofile
-export PATH=$PATH:~/bin:.
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"
 
 # ALIASES
 alias fin='say "Command finished, 任务完成了"'
